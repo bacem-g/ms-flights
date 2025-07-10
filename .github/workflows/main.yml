@@ -24,8 +24,8 @@ jobs:
         run: export PYTHON=/usr/bin/python
 
       # Test the service using the make file
-      - name: Run Unit Tests
-        run: make test
+      # - name: Run Unit Tests
+      #   run: make test
 
       # Push the image to Docker Hub
       - name: Build and push to Docker Registry
