@@ -20,6 +20,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: Set PYTHON environment variable
+        run: export PYTHON=/usr/bin/python
 
       # Test the service using the make file
       - name: Run Unit Tests
